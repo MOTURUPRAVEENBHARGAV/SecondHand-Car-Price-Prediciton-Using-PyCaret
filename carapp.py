@@ -54,6 +54,8 @@ def data_gathering():
     pred= float(pred["Label"])
     put_markdown("### Predicted Selling Price:%.2f L" %(pred))
     
+    put_text("\n\n\n\n\n\n\n\n\n\t\t\t©MOTURU PRAVEEN BHARGAV 2021")
+    
     
 app.add_url_rule('/predict', 'webio_view', webio_view(data_gathering),
             methods=['GET', 'POST', 'OPTIONS'])
